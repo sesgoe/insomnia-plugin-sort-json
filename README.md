@@ -1,5 +1,6 @@
 # Insomnia - Sort JSON Responses
 This plugin sorts the properties of JSON responses in alphabetical ascending order using `jsonabc`.
+
 `jsonabc` can be found here: https://github.com/ShivrajRath/jsonabc
 
 ## Install
