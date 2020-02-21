@@ -1,0 +1,18 @@
+{
+  "name": "insomnia-plugin-sort-json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "insomnia": {
+    "name": "sort-json",
+    "description": "Sort JSON response properties alphabetically"
+  },
+  "dependencies": {
+    "jsonabc": "^2.3.1"
+  },
+  "devDependencies": {}
+}
