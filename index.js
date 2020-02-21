@@ -5,7 +5,7 @@ module.exports.responseHooks = [
 
         const body = context.response.getBody()
         const data = JSON.parse(Buffer.from(body).toString())
-        const sortedData = Buffer.from(JSON.stringify(jsonabc.sortObj(data.response)))
+        const sortedData = Buffer.from(JSON.stringify(jsonabc.sortObj(data)))
 
         context.response.setBody(sortedData)
 
