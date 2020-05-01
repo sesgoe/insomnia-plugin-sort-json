@@ -1,8 +1,8 @@
 const sortJson = require('sort-json')
 
-const sortAscendingKey  = 'sort-ascending'
+const sortAscendingKey      = 'sort-ascending'
 const sortDepthKey          = 'sort-depth'
-const ignoreCaseKey     = 'ignore-case'
+const ignoreCaseKey         = 'ignore-case'
 
 const sortAscendingDefault  = true
 const sortDepthDefault      = 5
