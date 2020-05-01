@@ -22,7 +22,7 @@ const setUpDefaults = async (context) => {
     await setConfigValue(context, sortDepthKey, sortDepthDefault)
 
     if(!await context.store.hasItem(ignoreCaseKey)) {
-        setConfigValue(context, ignoreCaseKey, ignoreCaseDefault)
+        await setConfigValue(context, ignoreCaseKey, ignoreCaseDefault)
     }
 }
 
@@ -57,7 +57,7 @@ module.exports.responseHooks = [
         }
 
         const sortedData = Buffer.from(JSON.stringify(sortJson(data, options)))
-        await context.response.setBody(sortedData)
+        return await context.response.setBody(sortedData)
 
     }
 ]
